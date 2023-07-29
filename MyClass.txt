@@ -5,3 +5,5 @@ Hello Sharpner!
 This is my second class of my git learning course
 
 git is open source distributed version control system
+Created new branch in the git repo
+
