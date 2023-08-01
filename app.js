@@ -1,1 +1,0 @@
-console.log("iam a student of sharpner")
