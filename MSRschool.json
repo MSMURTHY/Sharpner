@@ -1,0 +1,25 @@
+{
+    "Students" : [
+        {
+            "Name" : "Murthy",
+            "age" : 25,
+            "class" : "10th",
+            "gender" : "male",
+            "marks" : [82,90,86,95,99,89],
+            "address" : null,
+            "grades" : [{
+                "quaterly" : "A",
+                "halferly" : "A+",
+                "finally"  : "A++"
+            }]
+        },
+        {
+            "Name" : "sai",
+            "age" : 24,
+            "class" : "10th",
+            "gender" : "male",
+            "marks" : [82,96,86,98,89,99],
+            "address" : null,  
+        },
+    ]
+}
