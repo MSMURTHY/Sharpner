@@ -121,3 +121,192 @@ const tasks = [
     },
 ];
 console.log(tasks);
+const tasksJSON =JSON.stringify(tasks);
+console.log(tasksJSON);
+
+//lopps
+//for loop
+for(let i= 0; i < 10; i++) {
+    console.log(i);
+    console.log('For Loop Number: ${i}');   
+}
+//while loop
+let i =0;
+while(i<10) {
+    console.log('While loop number: ${i}');
+    i++;
+}
+for(let i= 0; i< tasks.length; i++) {
+    console.length(tasks[i].text);
+}
+
+//forEach , map, filter
+
+tasks.forEach(function(task)){
+    console.log(task.text);
+};
+//map 
+const taskText = tasks.map(funtion(task)){
+   return task.text;
+
+};
+console.log(taskText);
+
+//filters
+const taskText = tasks.filter(funtion(task){
+    return task.text;
+
+});
+
+const taskCompleted = tasks.filter(function(task){
+    return taskCompleted.isCompleted === true;
+});
+console.log(taskCompleted);
+//maps
+const taskCompleted = tasks.filter(function(task){
+    return taskCompleted.isCompleted === true;
+}).map(funtion(task){
+    return task.text;
+});
+console.log(taskCompleted);
+
+// conditionals 
+//if
+const  x =10;
+const y  = 4;
+if (x < 5 || y< 10) {
+    console.log('x is more than 5 or y is more than 10');
+}
+else if (x >10){
+    console.log('x  is grater than 10');
+}
+else {
+    console.log('x is less than 10');
+}
+
+//ternary operations ? true or nottrue
+const x = 12;
+const color = x>8 ? 'red' : 'orange';
+console.log(color);
+
+const x = 15;
+const color = x<12 ? 'red': 'blue';
+
+switch(color){
+   case 'red':
+   console.log('color is red');
+   break;
+   case 'blue':
+   console.log('color is blue'); 
+    break; 
+    default:
+        console.log('color is NOT red or blue');
+    break;    
+}
+//function
+function addNums(num1 =1 , num2 +1){
+    console.log(num1 + num2);
+}
+addNums();
+function addNums(num1 =1 , num2 +1){
+    return num1 + num2;
+}
+// another method in function 
+console.log(addNUms(5,5));
+
+const addNums = (num1 =1 , num2= ) => console.log(num1 + num2);
+console.log(addNUms(5,5));
+
+//***** */ Object oriented programming   -----> constructive function
+function Person(fristName, lastName, dob) {
+    this.firstName = firstName;
+    this.firstNamelastName = lastName;
+    this.dob = new Date(dob); 
+    this.getBirthYear = function(){
+        return this.dob.getFullYear();
+    }
+    this.getFullName = function(){
+        return '${this.firstname} ${this.lastName}';
+    }
+}
+//prototype code only ... this is for data initiate  through function 
+Person.prototype.getBirtYear = function(){
+    return this.dob.getFullYear();
+}
+Person.prototype.getFullName = function(){
+    return '${this.firstName} ${this.lastName};
+}
+// Instantiate object
+const person1 = new Person('Murthy', 'mathala' , '06-06-1997');
+const person2 = new Person('Priya' , 'reddi' , '06-06-2018');
+
+console.log(person1.dob.getFullYear());
+console.log(person2.getBirthYear());
+console.log(person2.getFullName());
+
+//classes , it is also same as indicating functions
+class Person {
+    constructor(firstName, lastName, dob);
+    this.firstName  = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+}
+getBirthYear(){
+    return this.dob.getFullYear();
+}
+
+getFullName(){
+    return '${this.firstName} ${this.lastName}';
+}
+const person1 = new Person('Murthy', 'mathala' , '06-06-1997');
+const person2 = new Person('Priya' , 'reddi' , '06-06-2018');
+
+console.log(person2.getFullName());
+console.log(person1);
+
+// Selectors 
+// window object
+console.log(window); // many functions for api and document  and properties and many library is there in the window 
+
+// Single Element Selectors
+console.log(document.getElementById('my-form')); 
+console.log(document.querySelector('container'));
+const form = document.getElementById('my-form');
+//console.log(form);
+
+//Multiselectors
+console.log(document.querySelectorAll('.item'));
+console.log(document.getElementByClassName('.item'));
+console.log(document.getElementByTagName('li'));
+// slecting from HTML 
+const items = document.querySelectorAll('.item');
+items.forEach(item) => console.log(item);
+
+// Manipulating 
+const.ul = document.querySelector('.items');
+
+/*ul.remove;
+ul.lastElementChild.remove();
+ul.firstElementChild.textContent = 'Hello';*/
+
+const btn = document.querySelector('.btn');
+btn.style.background = 'red';
+
+//manipulate user interface 
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log('click');
+});
+
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector('#my-form')
+    .getElementByClassName.background = '#ccc';
+    document.querySelector('body').classList.add('bg-dark');
+    document.querySelector('.items');
+    .lastElementChild.innerHTML = '<h1>Hello</h1>';
+    //console.log('click');
+});
+
